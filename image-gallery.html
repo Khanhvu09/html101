@@ -10,16 +10,23 @@
         /* # will target an id */
         /* div{ */
         #gallery-wrapper{
-            border:2px solid red
+            border:2px solid red;
+            text-align: center;
         }
         #top-section{
-            border: solid blue 2px
+            border: solid blue 2px;
         }
         #middle-section{
-            border: solid green 2px
+            border: solid green 2px;
         }
         #bottom-section{
-            border: solid pink 2px
+            border: solid pink 2px;
+        }
+        .thumb{
+            width: 15%;
+        }
+        img{
+            width: 1000px
         }
     </style>
 
@@ -32,12 +39,19 @@
             <h1>A photo gallery made with CSS, HTML, a tiny bit of JS and whole lotta love</h1>
         </div>
 
+        <!-- an id is unique on a page -->
+        <!-- an id is like a serial number -->
         <div id="middle-section">
-            <h2>Middle Section</h2>
+            
+            <img class="thumb" src="./ga_pics/arabia_mnt.jpg" onclick="bigImage.src = this.src"/>
+            <img class="thumb" src="./ga_pics/callaway_gardens.jpg" onclick="bigImage.src = this.src"/>
+            <img class="thumb" src="./ga_pics/Etowah_Indian_Mounds.jpg" onmouseover="bigImage.src = this.src"/>
+            <img class="thumb" src="./ga_pics/prov_state_canyon.jpg" onclick="bigImage.src = this.src"/>
+            <img class="thumb" src="./ga_pics/wormsloe.jpg" onclick="bigImage.src = this.src"/>
         </div>
 
         <div id="bottom-section">
-            <h2>Bottom Section</h2>
+            <img src="./ga_pics/prov_state_canyon.jpg" name="bigImage"/>
         </div>
 
     </div>
